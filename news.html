@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8">
+  <title>Fitness World | Vijesti</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Fitness World</h1>
+  <nav>
+    <ul>
+      <li><a href="index.html">Početna</a></li>
+      <li><a class="active" href="news.html">Vijesti</a></li>
+      <li><a href="gallery.html">Galerija</a></li>
+      <li><a href="about.html">O nama</a></li>
+      <li><a href="contact.html">Kontakt</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="news-page">
+  <h2>Vijesti</h2>
+  <hr class="news-line">
+
+  <section class="news-list">
+
+    <article class="news-item">
+      <figure>
+        <img src="https://images.unsplash.com/photo-1558611848-73f7eb4001a1" alt="">
+      </figure>
+      <div class="news-content">
+        <h3>Povratak snage: Novi programi treninga</h3>
+        <p>
+          Predstavljamo nove programe snage i kondicije prilagođene svim razinama.
+          Programi su osmišljeni kako bi osigurali napredak i sigurnost tijekom treninga.
+          <a href="#" class="toggle-text">Više...</a>
+        </p>
+        <p class="more-text">
+          Ovaj program uključuje detaljne planove za svaki dan, savjete o prehrani i video upute za pravilno izvođenje vježbi. Članovi mogu pratiti svoj napredak kroz tjedne izazove i individualne ciljeve, a treneri pružaju stalnu podršku i motivaciju kako bi svaki trening bio učinkovit i zabavan.
+        </p>
+        <span class="date">03. siječnja 2026.</span>
+      </div>
+    </article>
+
+    <article class="news-item">
+      <figure>
+        <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48" alt="">
+      </figure>
+      <div class="news-content">
+        <h3>Grupni treninzi u novom terminu</h3>
+        <p>
+          Zbog velikog interesa uvedeni su dodatni termini grupnih treninga.
+          Treninzi su vođeni od strane licenciranih trenera.
+          <a href="#" class="toggle-text">Više...</a>
+        </p>
+        <p class="more-text">
+          Novi termini omogućuju članovima fleksibilnije planiranje treninga prema vlastitim obavezama. Grupni treninzi uključuju različite stilove – od visokointenzivnog intervalnog treninga (HIIT), preko funkcionalnog treninga, do pilatesa i yoge. Svaki trening vodi licencirani trener koji pruža individualne savjete, korekciju pokreta i motivaciju, kako bi svaki sudionik postigao najbolje rezultate. Pridruživanjem grupi, članovi ne samo da jačaju tijelo, nego i grade zajednicu i podršku među vježbačima.
+        </p>
+        <span class="date">28. prosinca 2025.</span>
+      </div>
+    </article>
+
+    <article class="news-item">
+      <figure>
+        <img src="https://images.unsplash.com/photo-1593079831268-3381b0db4a77" alt="">
+      </figure>
+      <div class="news-content">
+        <h3>Nova oprema u Fitness Worldu</h3>
+        <p>
+          U našu teretanu stigla je nova generacija sprava za trening snage.
+          Oprema omogućuje učinkovitiji i sigurniji trening.
+          <a href="#" class="toggle-text">Više...</a>
+        </p>
+        <p class="more-text">
+          Nova oprema uključuje modernizirane sprave za sve glavne mišićne skupine – od slobodnih utega i multipress sprava, do specijaliziranih sprava za noge, ruke i core. Sprave su dizajnirane s naglaskom na ergonomiju i sigurnost, s prilagodljivim težinama i sustavom amortizacije. Članovi sada mogu trenirati preciznije, smanjiti rizik od ozljeda i pratiti napredak pomoću digitalnih monitora integriranih u sprave. Ovo je savršena prilika da unaprijedite svoj trening i iskoristite sve prednosti najsuvremenije teretanske opreme.
+        </p>
+        <span class="date">20. prosinca 2025.</span>
+      </div>
+    </article>
+
+  </section>
+</main>
+
+<footer>
+  Ivana Mance © 2026 Fitness World
+</footer>
+
+<script>
+  document.querySelectorAll('.toggle-text').forEach(link => {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      const moreText = this.parentElement.nextElementSibling;
+      if (moreText.style.display === "none") {
+        moreText.style.display = "block";
+        this.textContent = "Manje...";
+      } else {
+        moreText.style.display = "none";
+        this.textContent = "Više...";
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
